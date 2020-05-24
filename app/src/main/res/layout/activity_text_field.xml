@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TextFieldActivity">
+
+    <include layout="@layout/toobar"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_email"
+        app:startIconDrawable="@drawable/ic_mail_black_24dp"
+        app:endIconMode="clear_text"
+        app:helperTextEnabled="true"
+        app:helperText="Seu melhor email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/seu_email"
+            android:inputType="textEmailAddress"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_nome"
+        app:startIconDrawable="@drawable/ic_person_black_24dp"
+        app:endIconMode="custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="32dp"
+        app:errorEnabled="true"
+        android:layout_marginLeft="32dp"
+        app:helperText="Mínimo 4 caracteres"
+        app:counterEnabled="true"
+        app:counterMaxLength="8">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/seu_nome"
+            android:inputType="text"
+            android:maxLength="8"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_senha"
+        app:startIconDrawable="@drawable/ic_vpn_key_black_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="8"
+        app:passwordToggleEnabled="true">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/sua_senha"
+            android:inputType="textPassword"
+            android:maxLength="8"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:text="@string/login" />
+
+</LinearLayout>

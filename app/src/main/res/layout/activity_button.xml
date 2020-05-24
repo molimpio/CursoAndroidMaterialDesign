@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ButtonActivity">
+
+    <include layout="@layout/toobar"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_raised"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_below="@+id/toolbar"
+        android:text="@string/botao_elevado"
+        android:layout_centerHorizontal="true"
+        style="@style/RaisedButton" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/flat_button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_raised"
+        style="@style/FlatButton" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_edit_black_24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:fabSize="normal"
+        android:backgroundTint="@color/colorPrimaryDark"/>
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">CursoAndroidMaterialDesign</string>
+    <string name="text_fields">Text Fields</string>
+    <string name="seu_email">Email</string>
+    <string name="sua_senha">Senha</string>
+    <string name="login">login</string>
+    <string name="seu_nome">Seu nome</string>
+    <string name="buttons">Buttons</string>
+    <string name="botao_elevado">Botao Elevado</string>
+    <string name="flat_button">Flat Button</string>
+    <string name="buscar">Buscar</string>
+    <string name="carrinho">Carrinho</string>
+    <string name="configuracoes">Configuracoes</string>
+    <string name="sobre">Sobre</string>
+    <string name="moises_olimpio">Moises Olimpio</string>
+    <string name="moiza_olimpio_gmail_com">moiza.olimpio@gmail.com</string>
+    <string name="open_drawer">Abrir</string>
+    <string name="close_drawer">Fechar</string>
+</resources>

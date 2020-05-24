@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Criando novo thema para versao 21-->
+    <style name="SuperMaterialTheme" parent="AppTheme">
+<!--        <item name="android:navigationBarColor">@color/colorPrimary</item>-->
+    </style>
+</resources>
